@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:scaleX="1"
+        android:scaleY="1"
+        android:id="@+id/img_cate"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/news"
+        app:civ_border_color="@color/color_ful"
+        app:civ_border_width="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tendanhmuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Toang"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_cate"
+        app:layout_constraintStart_toStartOf="@+id/img_cate"
+        app:layout_constraintTop_toBottomOf="@+id/img_cate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
